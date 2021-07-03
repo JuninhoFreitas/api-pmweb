@@ -42,7 +42,7 @@ Banco de dados PostGres.
 
 Yarn instalado na maquina que irá rodar o projeto.
 
-Criação de arquivo .env contendo as váriaveis de ambiente são necessárias neste projeto.
+Criação de arquivo .env contendo as váriaveis de ambiente que são necessárias neste projeto.
 
 <i>.env</i>
 
