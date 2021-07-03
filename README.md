@@ -32,11 +32,11 @@ Write about 1-2 paragraphs describing the purpose of your project.
 
 ## 🏁 Primeiros passos <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
-
 ### Pre-requisitos
 Banco de dados PostGres.
+
 Yarn instalado na maquina que irá rodar o projeto.
+
 Criação de arquivo .env contendo as váriaveis de ambiente são necessárias neste projeto.
 
 <i>.env</i>
@@ -66,13 +66,29 @@ Indicando que o servidor está rodando em localhost na porta 3333
 ## 🎈 Como usar <a name="usage"></a>
 _Endpoint_
 `<url>/orders`
+
 Método: *GET*
-Tipo: JSON
+
 Body:
 ```json
 {
   "startDate": "2015-12-30",
-	"endDate": "2016-12-30"
+  "endDate": "2016-12-30"
+}
+```
+Retorno esperado:
+```json
+{
+  "success": true,
+  "data": {
+    "result": {
+      "count": 3887,
+      "revenue": 411890.04,
+      "quantity": 7198,
+      "averageRetailPrice": 57.22,
+      "averageOrderValue": 105.97
+    }
+  }
 }
 ```
 
