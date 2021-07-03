@@ -97,6 +97,13 @@ Retorno esperado:
   }
 }
 ```
+| Propriedade          | Descrição                                                    |
+| -------------------- | ------------------------------------------------------------ |
+| count                | Total de pedidos efetuados no período.                       |
+| revenue              | Receita total de pedidos efetuados no período.               |
+| quantity             | Total de produtos vendidos no período (soma de quantidades). |
+| averageRetailPrice   | Preço médio de venda (receita / quantidade de produtos).     |
+| averageOrderValue    | Ticket médio de venda (receita / total de pedidos).          |
 
 
 
