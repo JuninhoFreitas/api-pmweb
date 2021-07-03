@@ -18,37 +18,36 @@
     <br> 
 </p>
 
-## 📝 Table of Contents
+## 📝 Indice
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
+- [Sobre](#about)
+- [Primeiros passos](#getting_started)
+- [Como usar](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Authors](#authors)
+- [Autor](#autor)
 
-## 🧐 About <a name = "about"></a>
+## 🧐 Sobre <a name = "about"></a>
 
 Write about 1-2 paragraphs describing the purpose of your project.
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+## 🏁 Primeiros passos <a name = "getting_started"></a>
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### Prerequisites
-
+### Pre-requisitos
+Banco de dados PostGres.
 Criação de arquivo .env contendo as váriaveis de ambiente são necessárias neste projeto.
 
 
 ```
-DATABASE_HOSTNAME
-DATABASE_USERNAME
-DATABASE_PASSWORD
-DATABASE_DATABASE
+DATABASE_HOSTNAME = 
+DATABASE_USERNAME = 
+DATABASE_PASSWORD = 
+DATABASE_DATABASE = 
 
 ```
 
-### Installing
+### Instalando
 
 A step by step series of examples that tell you how to get a development env running.
 
@@ -58,22 +57,8 @@ Say what the step will be
 yarn
 ```
 
-And repeat
-
-```
-until finished
-```
-
 End with an example of getting some data out of the system or using it for a little demo.
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## 🎈 Usage <a name="usage"></a>
+## 🎈 Como usar <a name="usage"></a>
 
 Yarn Dev
 
@@ -85,6 +70,6 @@ Yarn Dev
 - [Celebrate](https://www.npmjs.com/package/celebrate) - Middleware validator
 - [TypeORM](https://typeorm.io/) - ORM Framework
 
-## ✍️ Autores <a name = "authors"></a>
+## ✍️ Autor <a name = "autor"></a>
 
-- [@JuninhoFreitas](https://github.com/JuninhoFreitas) - Development and Documentation
+- [@JuninhoFreitas](https://github.com/JuninhoFreitas) - Desenvolvimento e documentação
