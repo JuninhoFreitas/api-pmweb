@@ -4,7 +4,6 @@ import ListOrdersService from '../services/ListOrdersService';
 export default class OrdersController {
   public async list(request: Request, response: Response): Promise<Response> {
     const { startDate, endDate } = request.body;
-    console.log(request.body);
     const listOrders = new ListOrdersService();
     const orders = await listOrders.execute({ startDate, endDate });
     let count = 0;
@@ -25,7 +24,6 @@ export default class OrdersController {
       averageRetailPrice: Number(averageRetailPrice.toFixed(2)),
       averageOrderValue: Number(averageOrderValue.toFixed(2)),
     };
-    console.log();
     const orderResult = await {
       success: true,
       data: {
