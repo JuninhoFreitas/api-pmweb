@@ -70,6 +70,7 @@ Server started on port 3333! 🏆 GET http://localhost:3333
 Indicando que o servidor está rodando em localhost na porta 3333
 ## 🎈 Como usar <a name="usage"></a>
 _Endpoint_
+
 `<url>/orders`
 
 Método: *GET*
