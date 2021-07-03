@@ -28,7 +28,12 @@
 
 ## 🧐 Sobre <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+<p>
+  Teste para Node.Js Developer
+  Construção de uma API que deverá receber como parâmetro as datas de início e fim do período de consulta.
+  Retornando um Json com resumo do que há no banco.
+</p>
+
 
 ## 🏁 Primeiros passos <a name = "getting_started"></a>
 
