@@ -36,31 +36,47 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Pre-requisitos
 Banco de dados PostGres.
+Yarn instalado na maquina que irá rodar o projeto.
 Criação de arquivo .env contendo as váriaveis de ambiente são necessárias neste projeto.
 
+<i>.env</i>
 
-```
-DATABASE_HOSTNAME = 
-DATABASE_USERNAME = 
-DATABASE_PASSWORD = 
-DATABASE_DATABASE = 
-
-```
+| Variável          | Descrição                                              |
+| ----------------- | ------------------------------------------------------ |
+| DATABASE_HOSTNAME | Hostname para conexão com o banco de dados             |
+| DATABASE_USERNAME | Usuario de acesso ao banco de dados                    |
+| DATABASE_PASSWORD | Senha de acesso ao banco de dados                      |
+| DATABASE_DATABASE | Nome do banco de dados                                 |
 
 ### Instalando
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
+Iniciar instalação de pacotes necessários com yarn:
 ```
 yarn
 ```
-
-End with an example of getting some data out of the system or using it for a little demo.
+Executar serviço API:
+```
+yarn dev
+```
+Se tudo ocorreu bem, após ter criado o .env e configurado corretamente o banco de dados, após executar o comando acima, deverá obter a seguinte mensagem no terminal:
+```
+Server started on port 3333! 🏆 GET http://localhost:3333
+```
+Indicando que o servidor está rodando em localhost na porta 3333
 ## 🎈 Como usar <a name="usage"></a>
+_Endpoint_
+`<url>/orders`
+Método: *GET*
+Tipo: JSON
+Body:
+```json
+{
+  "startDate": "2015-12-30",
+	"endDate": "2016-12-30"
+}
+```
 
-Yarn Dev
+
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
