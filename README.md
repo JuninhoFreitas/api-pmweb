@@ -1,20 +1,20 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=224px height=120px src="https://ncdn0.infojobs.com.br/logos/2011/01/03/157727.jpg" alt="Project logo"></a>
+ <img width=224px height=140px src="https://yt3.ggpht.com/ytc/AKedOLTPwDyeUXnSwcXo8J-zvQ4pezD8_5ZgyTMk4NH9KA=s900-c-k-c0x00ffffff-no-rj" alt="Project logo"></a>
 </p>
 
-<h3 align="center">API - Orders</h3>
+<h3 align="center">API - Vendas</h3>
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/Status-Complete-brightgreen)]()
+[![Status](https://img.shields.io/badge/Status-in%20development-red)]()
 
 </div>
 
 ---
 
 <p align="center"> Objetivo do projeto: 
-  Avaliar a capacidade técnica, crítica e raciocínio lógico, na construção de uma API para acesso a uma camada de dados.
+  Construir uma api completa de vendas para usar como base em outros projetos.
     <br> 
 </p>
 
@@ -29,9 +29,8 @@
 ## 🧐 Sobre <a name = "about"></a>
 
 <p>
-  Teste para Node.Js Developer
-  Construção de uma API que deverá receber como parâmetro as datas de início e fim do período de consulta.
-  Retornando um Json com resumo do que há no banco.
+  Construção de uma API que conterá todas as características de um api em produção,
+  Para ser usada em outros projetos seja como base ou em uso real.
 </p>
 
 
@@ -42,16 +41,6 @@ Banco de dados PostGres.
 
 Yarn instalado na maquina que irá rodar o projeto.
 
-Criação de arquivo .env contendo as váriaveis de ambiente que são necessárias neste projeto.
-
-<i>.env</i>
-
-| Variável          | Descrição                                              |
-| ----------------- | ------------------------------------------------------ |
-| DATABASE_HOSTNAME | Hostname para conexão com o banco de dados             |
-| DATABASE_USERNAME | Usuario de acesso ao banco de dados                    |
-| DATABASE_PASSWORD | Senha de acesso ao banco de dados                      |
-| DATABASE_DATABASE | Nome do banco de dados                                 |
 
 ### Instalando
 
@@ -71,7 +60,7 @@ Indicando que o servidor está rodando em localhost na porta 3333
 ## 🎈 Como usar <a name="usage"></a>
 _Endpoint_
 
-`<url>/orders`
+`<url>/users`
 
 Método: *GET*
 
@@ -84,26 +73,19 @@ Body:
 ```
 Retorno esperado:
 ```json
-{
-  "success": true,
-  "data": {
-    "result": {
-      "count": 3887,
-      "revenue": 411890.04,
-      "quantity": 7198,
-      "averageRetailPrice": 57.22,
-      "averageOrderValue": 105.97
-    }
+[
+  {
+    "id": "xxxxxx0000000xxxxxx000000xxxxxxx",
+    "name": "João",
+    "email": "joao@dev-addict.com",
+    "password": "$2a$08$1f/vV.a/4akHGzXReOhOeekoOzR2wIbDo0Jcd9qiNzhN1Vt.xp6c.",
+    "avatar": null,
+    "created_at": "2021-07-12T08:36:07.394Z",
+    "updated_at": "2021-07-12T08:36:07.394Z"
   }
-}
+]
 ```
-| Propriedade          | Descrição                                                    |
-| -------------------- | ------------------------------------------------------------ |
-| count                | Total de pedidos efetuados no período.                       |
-| revenue              | Receita total de pedidos efetuados no período.               |
-| quantity             | Total de produtos vendidos no período (soma de quantidades). |
-| averageRetailPrice   | Preço médio de venda (receita / quantidade de produtos).     |
-| averageOrderValue    | Ticket médio de venda (receita / total de pedidos).          |
+
 
 
 
@@ -114,6 +96,7 @@ Retorno esperado:
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 - [Celebrate](https://www.npmjs.com/package/celebrate) - Middleware validator
 - [TypeORM](https://typeorm.io/) - ORM Framework
+- [Multer]() - Upload Lib
 
 ## ✍️ Autor <a name = "autor"></a>
 
